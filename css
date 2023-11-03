@@ -1,0 +1,74 @@
+
+body {
+  font-family: "Poppins";
+  font-size: 22px;
+  cursor: url('https://i.postimg.cc/MTj8hqhv/icons8-paintbrush-80-1.png'), auto;
+  background: black;
+}
+
+.map {
+  position: absolute;
+    opacity: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+.content {
+  position: relative;
+  overflow: hidden;
+}
+
+#light {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(var(--light-position-x, 0px), var(--light-position-y, 0px));
+filter: brightness(3.75);
+  z-index: -2;
+}
+
+svg {
+    width: 30vw;
+}
+.mainArea {
+  width: 60%;
+  display: flex;
+  gap: 3rem
+}
+.flexArea {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.textBox {
+  font-family: "Poppins";
+  width: 100%;
+  height: 400px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #DB5049;
+  border-radius: 4px;
+  background-color: #EAE8DD;
+  font-size: 14px;
+  resize: none;
+  white-space: wrap;
+}
+
+button {
+    margin-top: -12px;
+    background-color: #DB5049;
+    border: 1px solid #a02424;
+    height: 6rem;
+    width: 20rem;
+    color: #EAE8DD;
+    font-family: "Poppins";
+    font-size: 40px;
+    opacity: 0.9;
+  transition: 0.3s;
+}
+button:hover {opacity: 1}
